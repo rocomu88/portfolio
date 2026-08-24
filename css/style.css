@@ -359,22 +359,15 @@ ul { list-style: none; }
 .case-card.reverse { direction: rtl; }
 .case-card.reverse > * { direction: ltr; }
 .case-card-image {
-  background: #E8EDF5;
   overflow: hidden;
   position: relative;
   min-height: 380px;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 32px 24px 0;
 }
 .case-card-image img {
-  border-radius: 8px 8px 0 0;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center;
+  object-position: center;
   transition: transform 0.5s ease;
 }
 .case-card:hover .case-card-image img { transform: scale(1.04); }
