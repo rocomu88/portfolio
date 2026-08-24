@@ -35,7 +35,17 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.fade-up, .stagger').forEach(el => observer.observe(el));
 
 /* Active nav link */
-const page = window.location.pathname.split('/').pop() || 'index.html';
+const caseStudyPages = [
+  'governance-orchestration-service.html',
+  'partner-enablement-network.html',
+  'bulk-email.html',
+  'seismic-social.html',
+  'digital-salesrooms.html',
+  'meetings-analytics.html',
+  'seismic-meetings.html'
+];
+let page = window.location.pathname.split('/').pop() || 'index.html';
+if (caseStudyPages.includes(page)) page = 'case-studies.html';
 document.querySelectorAll('.nav-link[data-page]').forEach(link => {
   if (link.dataset.page === page) link.classList.add('active');
 });
