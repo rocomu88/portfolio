@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Governance Orchestration Service — Rodrigo Müller</title>
+  <meta name="description" content="Leading compliance design as a platform program — one compliance model across four product surfaces, scaled through a design system and an embedded evangelist program." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Rodrigo Müller</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-page="index.html">Home</a></li>
+        <li><a href="case-studies.html" class="nav-link" data-page="case-studies.html">Work</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about.html">About</a></li>
+        <li><a href="resume.html" class="nav-link" data-page="resume.html">Resume</a></li>
+        <li><a href="mailto:rocomu8@gmail.com" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== CASE HERO ===================== -->
+  <header class="case-hero">
+    <div class="container case-hero-inner">
+      <div class="case-breadcrumb">
+        <a href="case-studies.html">Work</a>
+        <span>›</span>
+        <span>Governance Orchestration Service</span>
+      </div>
+      <span class="section-label" style="color: rgba(255,255,255,0.4);">Program Leadership · Platform Design · Regulated Workflows</span>
+      <h1 class="case-hero-title">One compliance model,<br>many experiences</h1>
+      <p class="case-hero-brief">
+        Compliance had been built as a feature, over and over, inside one product area after
+        another. The result was a platform where every surface handled approval differently and
+        none of them handled it well enough for a regulated firm to trust. I led the design
+        program that replaced that pattern with a single governance service — and, more
+        importantly, built the design system and the embedded evangelist model that let squads
+        across the org apply it without me in the room.
+      </p>
+      <div class="case-meta-bar">
+        <div class="case-meta-item">
+          <div class="case-meta-label">My Role</div>
+          <div class="case-meta-value">Design Program Lead<br>Strategy · Vision · Stakeholder Alignment</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Design Team</div>
+          <div class="case-meta-value">4 design owners<br>7 embedded evangelists</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Partnership</div>
+          <div class="case-meta-value">Product · Engineering<br>Compliance SMEs · Exec Sponsors</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Status</div>
+          <div class="case-meta-value">MVP targeting October release</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== CASE BODY ===================== -->
+  <article class="case-body">
+    <div class="container">
+
+      <!-- Scope -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">Program Scope</div>
+        <h2 class="case-section-title">Platform-wide, not product-deep</h2>
+        <div class="impact-grid stagger">
+          <div class="impact-card">
+            <div class="impact-number">9</div>
+            <div class="impact-label">Canonical states replacing every per-application approval model</div>
+          </div>
+          <div class="impact-card">
+            <div class="impact-number">4</div>
+            <div class="impact-label">Product surfaces converging on it for the MVP release</div>
+          </div>
+          <div class="impact-card">
+            <div class="impact-number">7</div>
+            <div class="impact-label">Design evangelists embedded across three organizational areas</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- The Challenge -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">The Challenge</div>
+        <h2 class="case-section-title">The honor system, at enterprise scale</h2>
+        <p>
+          Financial services firms operate under rules that leave no room for interpretation.
+          FINRA and SEC requirements mean every piece of client-facing material has to be
+          governed by policy, supervised before it goes out, and archived in a form regulators
+          can retrieve. Firms that get this wrong are fined.
+        </p>
+        <p>
+          Here is what the workflow actually looked like for an advisor who wanted to personalize
+          a document. Customize it in the platform. Download it. Upload it into a separate
+          third-party review tool. Wait. The reviewer downloads it from that tool, marks it up,
+          uploads it back. The advisor is notified in the third-party tool, returns to the
+          platform to make the edit, downloads again, re-uploads again. The reviewer downloads
+          again. Eventually something gets approved, and the advisor downloads it one final time
+          to upload it back where it started.
+        </p>
+        <p>
+          And at the end of all of that, nothing stopped the advisor from editing the approved
+          version anyway. Firms had no mechanism to enforce their own policy. They were relying
+          on the honor system — which is why most of them simply turned features off instead.
+        </p>
+        <p>
+          That was the commercial problem underneath the design problem. Compliance gaps were not
+          a satisfaction issue; they were blocking deals outright and capping what existing
+          customers were willing to switch on.
+        </p>
+
+        <div class="case-image-block">
+          <img src="assets/img/gos-dsr-flow.png" alt="Engagements list showing digital sales rooms with live, in-review, and rejected compliance states" />
+        </div>
+      </div>
+
+      <!-- Leadership Role -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">My Role as Design Leader</div>
+        <h2 class="case-section-title">Leading a program I could not personally design</h2>
+        <p>
+          This is the distinction that defined the work for me. On earlier initiatives I could
+          own the experience end to end myself. Here the surface area was four product areas
+          owned by different squads, an admin configuration layer, a reviewer experience that had
+          to work identically everywhere, and archival integrations with external vendors. No
+          single designer could hold that, and trying would have made me the bottleneck on a
+          program with a hard October deadline.
+        </p>
+        <p>
+          So I led it as a program rather than a project. I set the design strategy and the
+          compliance-by-design vision, ran the alignment with my engineering and product
+          counterparts, structured design ownership and tracking across squads, and coordinated
+          with the other design managers whose teams would carry pieces of the work. I also led
+          the design work for archival of engagements directly, because staying hands-on in one
+          area kept my judgment on the rest of it honest.
+        </p>
+        <p>
+          The pivotal moment was a three-day onsite I helped drive to convert an open-ended
+          program into decisions. We went in with two questions: how do we build compliance as a
+          platform rather than a per-app feature, and what exactly ships in October. We came out
+          with five locked decisions, including the architecture, the archival vendor, the
+          surface scope, and a deliberate simplification — one workflow per application at MVP
+          instead of context-conditional multi-workflow. That last one was the call that made an
+          October date real.
+        </p>
+        <p>
+          A quieter decision I would defend just as hard: the engine ships on for every customer,
+          with an empty configuration that behaves exactly like today. Nothing gates until a firm
+          configures a rule. Replacing the approval layer under a platform that enterprises run
+          their businesses on is the kind of change that generates incidents, and the only
+          version of it I was willing to sign off on was one where the default state is
+          indistinguishable from the status quo. Ambition in the model, conservatism in the
+          rollout.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- The Design Insight -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">The Core Insight</div>
+        <h2 class="case-section-title">Separating the model from the experience</h2>
+        <p>
+          The insight that unlocked the program was that compliance is one model expressed as
+          many experiences. Submission, review, and decision are the same conceptual sequence
+          whether the content is a bulk email, a digital sales room, a shared link, or a working
+          document. What differs is the surface, not the semantics.
+        </p>
+        <p>
+          That let us split responsibility cleanly. The governance service owns the workflow
+          engine, the compliance state model, the reviewer experience, and the audit and archival
+          hooks. Application teams define only what is genuinely local to them: what event
+          triggers review, what counts as their content object, what a draft state means, and
+          when the work is done.
+        </p>
+        <p>
+          We named the interface between those two things the compliance contract. It sounds like
+          an engineering artifact, but it was really a design and alignment tool: a shared set of
+          questions every team had to answer the same way. What is a content object, and what is
+          a version? What are the valid compliance states and how do they transition? What
+          modification is significant enough to trigger re-review? Getting teams to answer those
+          consistently was most of the actual work.
+        </p>
+        <p>
+          The single most clarifying decision we made was pulling two things apart that everyone
+          had been treating as one. Whether a piece of content is approved and where a review has
+          got to are separate facts. A document can be approved while a new submission on it is
+          in review. A submission can be rejected without the previously approved version losing
+          its approval. Collapsing those into one status is what had produced years of
+          almost-right behavior across the platform, so we tracked them on two independent axes
+          and made it a rule that neither one may be inferred from the other.
+        </p>
+        <p>
+          From there the model settled into nine canonical states — and this is where the thesis
+          became literal rather than rhetorical. The canonical state never changes; only its
+          label does. One state reads as <em>Submitted</em> to the person who sent it,
+          <em>Unclaimed</em> to a reviewer scanning a queue for work, and <em>Unassigned</em> to
+          an admin deciding who should take it. Same fact, three vocabularies, because those are
+          three genuinely different jobs. One model, many experiences, expressed at the level of
+          a single word.
+        </p>
+        <div class="process-steps stagger">
+          <div class="process-step">
+            <div class="process-step-num">01</div>
+            <div class="process-step-title">Submission</div>
+            <div class="process-step-desc">A first-class object rather than a property of the content. Many submissions can exist per content item and workflow, each tracking its own status, owner, and available actions.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">02</div>
+            <div class="process-step-title">Review</div>
+            <div class="process-step-desc">One unified queue across every application and workflow, with a consistent action set — approve, reject, request changes, revoke — so a reviewer learns the experience once.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">03</div>
+            <div class="process-step-title">Administration</div>
+            <div class="process-step-desc">Where firms configure their own compliance contract: steps, reviewers, and rules per workflow. No two firms have the same risk posture, so the system had to bend without being rebuilt.</div>
+          </div>
+        </div>
+
+        <div class="case-image-block">
+          <img src="assets/img/gos-reviewer-queue.png" alt="Unified reviewer queue showing submissions across content types with claim actions and workflow steps" />
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- State design craft -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">Where the Craft Went</div>
+        <h2 class="case-section-title">The distinctions that don't look like design work</h2>
+        <p>
+          Most of the difficulty on this program lived in decisions that never render as a
+          screen. Three examples of the kind of thing we spent real time on.
+        </p>
+        <p>
+          <strong>Rejected and needs-changes are not the same verdict.</strong> A reviewer asking
+          for an edit is a soft outcome — the submitter revises and continues in the same
+          session, and the work keeps its history. Rejection is terminal: the submission is over,
+          and continuing means starting a new one. We required a reason on rejection for that
+          reason. The two carry different consequences for the person on the other end, so
+          flattening them into one negative state would have been a kindness to the system and a
+          cruelty to the user.
+        </p>
+        <p>
+          <strong>Revoking an approval cannot erase it.</strong> If something was approved and
+          later pulled back, the firm still needs to prove it was legitimately approved at the
+          moment it went out. So revoke returns the item to review without rewriting the past:
+          approvals from earlier steps stand, later steps restart, and the record shows both the
+          approval and the reversal. Designing the undo was harder than designing the action.
+        </p>
+        <p>
+          <strong>Archive, audit, and activity are three different things.</strong> They get
+          conflated constantly. The archive is an external regulatory record of what a recipient
+          saw and who authorized it. The audit trail is internal traceability. Activity is the
+          in-product history a user reads to understand what happened to their work. Different
+          audiences, retention rules, and levels of detail — and only one of them is a user
+          interface.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="case-section fade-up">
+        <div class="case-section-label">Scaling the Team</div>
+        <h2 class="case-section-title">Compliance-by-design, taught rather than policed</h2>
+        <p>
+          A single compliance model only holds if the designers building on it understand it.
+          The failure mode I wanted to avoid was becoming a review gate — every squad's
+          compliance work routed through me for approval, which would have been slower than the
+          workflow we were replacing.
+        </p>
+        <p>
+          Instead I established the compliance-by-design evangelist program. Seven designers
+          embedded across engagements, learning, and content, each responsible for applying
+          compliance patterns inside their own squad. Alongside it, a shared compliance design
+          system covering the recurring pieces — compliance indicators, review queues, audit
+          logs, approval states — so an evangelist reaches for a pattern instead of inventing one.
+        </p>
+        <p>
+          The bet was that distributing the knowledge would scale better than centralizing the
+          decisions. It also gave seven designers exposure to regulated design work and a visible
+          role in a company-priority program, which was the part I cared about most.
+        </p>
+        <div class="result-list stagger">
+          <div class="result-item">
+            <div class="result-item-text">Compliance design system as shared infrastructure — indicators, review queues, audit logs, approval states</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-text">Seven embedded evangelists applying patterns inside their own squads rather than routing through a central gate</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-text">Design ownership and tracking structured per team, agreed with engineering and product leadership</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-text">A twice-weekly cross-functional cadence holding four surfaces to a single release date</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Reviewer experience -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">Reviewer Experience</div>
+        <h2 class="case-section-title">Telling the reviewer what actually changed</h2>
+        <p>
+          Reviewers are the constraint in every compliance system. They are a small team, they
+          are legally accountable, and the volume they face is the reason firms restrict
+          personalization in the first place. Speeding up review without weakening it was the
+          highest-value problem on the program.
+        </p>
+        <p>
+          The approach we took was to reduce what a reviewer has to reconstruct. When a submission
+          arrives, our AI assistant summarizes the delta against the previously approved version
+          in plain language — what was added, what was rewritten, and specifically which claims
+          need legal confirmation. The reviewer can then toggle between the submitted version, the
+          previous version, or both, with changes highlighted.
+        </p>
+        <p>
+          The design principle held from the rest of the program: the assistant narrows attention,
+          the reviewer makes the decision, and the audit trail records the human action. In a
+          regulated workflow, an AI that decides is a liability. An AI that tells you where to look
+          is leverage.
+        </p>
+        <div class="case-image-block">
+          <img src="assets/img/gos-reviewer-detail.png" alt="Submission review screen with an AI-generated summary of changes and version comparison controls" />
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Where it stands -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">Where It Stands</div>
+        <h2 class="case-section-title">Building toward the October release</h2>
+        <p>
+          The program is in build against a staged milestone plan, with the MVP scoped to four
+          surfaces and each one required to be sellable, in pilot, or demo-ready at our annual
+          customer conference. Archival moved into pilot ahead of the broader release, and the
+          approval workflow and external ad-review integration are tracking to the same date.
+        </p>
+        <p>
+          What I would point to as the real outcome, before any of the launch metrics exist, is
+          that compliance stopped being something each product area solved on its own. That
+          change is organizational as much as architectural, and it is the part that will still
+          be true in two years.
+        </p>
+        <p>
+          The longer arc is bigger than compliance. The service was deliberately built as a
+          generic, domain-agnostic workflow engine with no compliance logic baked into it, which
+          means the same machinery can eventually absorb the platform's ordinary content
+          publishing workflow. We scoped the first release to compliance because it was the
+          urgent problem, not because it was the boundary of the idea.
+        </p>
+        <p>
+          There are still things we have not settled. The sharpest is a genuine tension in the
+          model: when no rule applies to a piece of content, should the system treat it as
+          approved or as ungoverned? Defaulting to approved keeps the product usable and matches
+          how everything behaves today. Defaulting to ungoverned is the safer regulatory posture
+          and the honest answer for a surface nobody has instrumented yet. Both positions are
+          defensible, both are written into our requirements, and reconciling them is on me.
+        </p>
+
+        <div class="case-image-grid" style="margin-top: 40px;">
+          <div class="case-image-block">
+            <img src="assets/img/gos-workflow-config.png" alt="Admin workflow configuration listing review workflows by content type, review steps, and reviewers" />
+          </div>
+          <div class="case-image-block">
+            <img src="assets/img/gos-submitter-hub.png" alt="Submitter view of the submissions hub showing only their own submissions with status" />
+          </div>
+        </div>
+        <p style="margin-top: 24px; font-size: 14px; color: var(--text-muted);">
+          The same submissions model rendered for two different roles — the admin configures the
+          workflow; the submitter sees only their own work and no decision actions.
+        </p>
+      </div>
+
+      <!-- Reflection -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">What I Took From It</div>
+        <h2 class="case-section-title">The leverage moved</h2>
+        <p>
+          Earlier in my career the way to increase my impact was to design more, better, faster.
+          On this program the highest-leverage things I did were choosing what not to build for
+          the first release, defining the contract that let teams work in parallel, and putting
+          seven designers in a position to carry compliance work I would otherwise have had to
+          touch myself.
+        </p>
+        <p>
+          None of those show up as a screen in a portfolio. All of them are the reason four
+          product surfaces are converging on one model instead of drifting into four more
+          versions of the problem we started with.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===================== NEXT CASE ===================== -->
+  <section class="next-case">
+    <div class="container">
+      <span class="section-label">Next Case Study</span>
+      <div class="next-case-title">Partner Enablement Network</div>
+      <p class="next-case-sub">Designing the governed distribution layer connecting the financial services ecosystem</p>
+      <a href="partner-enablement-network.html" class="btn btn-primary">View Case Study</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">Rodrigo Müller</div>
+        <nav class="footer-nav">
+          <a href="index.html" class="footer-nav-link">Home</a>
+          <a href="case-studies.html" class="footer-nav-link">Work</a>
+          <a href="about.html" class="footer-nav-link">About</a>
+          <a href="resume.html" class="footer-nav-link">Resume</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/rodmuller/" class="social-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/rocomu8/" class="social-btn" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© <span id="year"></span> Rodrigo Müller. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
