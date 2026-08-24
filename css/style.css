@@ -363,7 +363,8 @@ ul { list-style: none; }
   position: relative;
   min-height: 380px;
 }
-.case-card--gos .case-card-image { border-right: 1px solid var(--border); }
+.case-card-image { border-right: 1px solid var(--border); }
+.case-card.reverse .case-card-image { border-right: none; border-left: 1px solid var(--border); }
 .case-card-image img {
   width: 100%;
   height: 100%;
@@ -1096,7 +1097,7 @@ ul { list-style: none; }
   .stat-item:nth-child(3), .stat-item:nth-child(4) { border-top: 1px solid var(--border); padding-top: 24px; }
   .case-card { grid-template-columns: 1fr; }
   .case-card.reverse { direction: ltr; }
-  .case-card-image { min-height: 280px; }
+  .case-card-image { min-height: 280px; border-right: none; border-left: none; }
   .case-card-content { padding: 44px; }
   .leadership-teaser .container { grid-template-columns: 1fr; }
   .leadership-grid { grid-template-columns: 1fr; }
