@@ -101,7 +101,6 @@ ul { list-style: none; }
   color: var(--navy);
   white-space: nowrap;
 }
-.nav-logo img { height: 34px; width: auto; display: block; }
 .nav-links {
   display: flex;
   align-items: center;
