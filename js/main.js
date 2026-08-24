@@ -36,16 +36,18 @@ document.querySelectorAll('.fade-up, .stagger').forEach(el => observer.observe(e
 
 /* Active nav link */
 const caseStudyPages = [
-  'governance-orchestration-service.html',
-  'partner-enablement-network.html',
-  'bulk-email.html',
-  'seismic-social.html',
-  'digital-salesrooms.html',
-  'meetings-analytics.html',
-  'seismic-meetings.html'
+  'governance-orchestration-service',
+  'partner-enablement-network',
+  'bulk-email',
+  'seismic-social',
+  'digital-salesrooms',
+  'meetings-analytics',
+  'seismic-meetings'
 ];
-let page = window.location.pathname.split('/').pop() || 'index.html';
-if (caseStudyPages.includes(page)) page = 'case-studies.html';
+const segments = window.location.pathname.split('/').filter(Boolean);
+let page = (segments[segments.length - 1] || 'index').replace(/\.html$/, '');
+if (caseStudyPages.includes(page)) page = 'case-studies';
 document.querySelectorAll('.nav-link[data-page]').forEach(link => {
-  if (link.dataset.page === page) link.classList.add('active');
+  const linkPage = link.dataset.page.replace(/\.html$/, '');
+  if (linkPage === page) link.classList.add('active');
 });
