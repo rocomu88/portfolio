@@ -812,6 +812,20 @@ ul { list-style: none; }
    ============================================================ */
 .case-hero { padding: calc(var(--nav-h) + 60px) 0 0; background: var(--navy); }
 .case-hero-inner { padding-bottom: 0; }
+.case-hero--gos { position: relative; overflow: hidden; }
+.case-hero--gos::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, var(--navy) 0%, var(--navy) 30%, rgba(15,23,42,0.75) 50%, rgba(15,23,42,0.3) 75%, rgba(15,23,42,0.05) 100%),
+    url('../assets/img/GOS-thumbnail.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: center, right center;
+  background-size: cover, cover;
+  z-index: 0;
+}
+.case-hero--gos .case-hero-inner { position: relative; z-index: 1; }
 .case-breadcrumb {
   display: flex;
   align-items: center;
