@@ -363,6 +363,7 @@ ul { list-style: none; }
   position: relative;
   min-height: 380px;
 }
+.case-card--gos .case-card-image { border-right: 1px solid var(--border); }
 .case-card-image img {
   width: 100%;
   height: 100%;
