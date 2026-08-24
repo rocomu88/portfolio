@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bulk Email — Rodrigo Müller</title>
+  <meta name="description" content="Designing Seismic Bulk Email — one compliant communication experience spanning one-time sends, recurring campaigns, event-triggered messages, mobile, and bulk welcome email." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <nav class="nav" id="nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Rodrigo Müller</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-page="index.html">Home</a></li>
+        <li><a href="case-studies.html" class="nav-link" data-page="case-studies.html">Work</a></li>
+        <li><a href="about.html" class="nav-link" data-page="about.html">About</a></li>
+        <li><a href="resume.html" class="nav-link" data-page="resume.html">Resume</a></li>
+        <li><a href="mailto:rocomu8@gmail.com" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-mobile-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===================== CASE HERO ===================== -->
+  <header class="case-hero">
+    <div class="container case-hero-inner">
+      <div class="case-breadcrumb">
+        <a href="case-studies.html">Work</a>
+        <span>›</span>
+        <span>Bulk Email</span>
+      </div>
+      <span class="section-label" style="color: rgba(255,255,255,0.4);">Product Design · Compliance-by-Design · Financial Services</span>
+      <h1 class="case-hero-title">Personal at scale,<br>compliant by default</h1>
+      <p class="case-hero-brief">
+        Email Blast let a seller send one message to a list, and stopped there. It never had to
+        answer what happens when that message is personalized, the recipient list changes
+        overnight, or a regulator asks for the record five years later. I'm leading the design of
+        Bulk Email, Seismic's replacement for it — one experience that has to work for a seller
+        sending a single message before lunch, a marketer running a recurring campaign, and a
+        compliance reviewer approving both, without turning into five different products wearing
+        the same name.
+      </p>
+      <div class="case-meta-bar">
+        <div class="case-meta-item">
+          <div class="case-meta-label">My Role</div>
+          <div class="case-meta-value">Senior Product Designer<br>End-to-end experience, all workflows</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Partnership</div>
+          <div class="case-meta-value">Product Management · Engineering<br>Compliance · Governance Platform Team</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Scope</div>
+          <div class="case-meta-value">One-Time → Recurring → Event-Triggered → Mobile</div>
+        </div>
+        <div class="case-meta-item">
+          <div class="case-meta-label">Status</div>
+          <div class="case-meta-value">In design across the Fall–Spring roadmap</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== CASE BODY ===================== -->
+  <article class="case-body">
+    <div class="container">
+
+      <!-- Scope -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">Product Scope</div>
+        <h2 class="case-section-title">One send experience, five very different jobs</h2>
+        <div class="impact-grid stagger">
+          <div class="impact-card">
+            <div class="impact-number">5</div>
+            <div class="impact-label">Distinct workflows unified under one compliance model — one-time, recurring, event-triggered, mobile, and bulk welcome email</div>
+          </div>
+          <div class="impact-card">
+            <div class="impact-number">7</div>
+            <div class="impact-label">User roles the experience serves, from sellers and marketers to compliance reviewers and supervisors</div>
+          </div>
+          <div class="impact-card">
+            <div class="impact-number">10</div>
+            <div class="impact-label">Canonical delivery states, from Draft to Delivered, shared across every workflow</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- The Challenge -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">The Challenge</div>
+        <h2 class="case-section-title">A blast tool being asked to become a compliance system</h2>
+        <p>
+          Email Blast did one thing: send a message to a list. It was never built to know whether
+          the message had been personalized beyond what was approved, whether the recipient list
+          was still accurate by the time it went out, or what a firm would show a regulator if
+          asked to prove what was sent and why. Financial services customers were increasingly
+          using it anyway, because it was the tool they had — which meant every gap in it became a
+          compliance exposure someone eventually had to explain.
+        </p>
+        <p>
+          The harder problem was that "bulk email" was never really one workflow. A seller sending
+          a single personalized message before a meeting, a marketer running a campaign that
+          re-syncs its recipient list every week, a birthday email triggered automatically by a
+          CRM event nobody is watching in the moment, and a rep sending from an iPad between
+          meetings are four completely different operating conditions. Design them as four
+          unrelated features and the product fragments — different compliance behavior, different
+          recipient handling, different vocabulary for the same underlying status. Design them as
+          one workflow and you lose the speed each context actually needs.
+        </p>
+        <p>
+          And underneath all of it sat the constraint that made this a design problem rather than
+          a build problem: personalization is the entire point of the product, and personalization
+          is exactly what triggers compliance review. A tool that makes editing easy and a tool
+          that keeps every edit governed are, by default, in tension with each other.
+        </p>
+      </div>
+
+      <!-- My Role -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">My Role</div>
+        <h2 class="case-section-title">Designing on top of governance, not around it</h2>
+        <p>
+          Bulk Email is explicitly an anchor experience for Seismic's governance service and
+          Compliance Workflow 2.0 — one of the first products meant to build directly on that
+          platform rather than invent its own approval logic. That set the terms of the role. My
+          job was not to design a review workflow from scratch; it was to answer, for email
+          specifically, the questions the platform leaves to each product: what counts as a
+          content object, what edit is significant enough to require re-review, what a draft means
+          before it's ever sent, and what "done" looks like for a message that might get resent to
+          a refreshed list next month.
+        </p>
+        <p>
+          The recurring decision throughout was how much of "bulk email" should be one system and
+          how much should flex per workflow. I pushed hard for a single status model — the same
+          ten states whether the message is a one-time blast or the fortieth run of a recurring
+          campaign — because a support team, a compliance reviewer, and a supervisor should not
+          have to learn a different vocabulary for every entry point into the same product.
+          Where I did not push for uniformity was configuration: what a seller is allowed to edit
+          on a recurring campaign is an administrator decision made per campaign, not a global
+          setting, because no two firms run outreach the same way.
+        </p>
+        <p>
+          Mobile forced the sharpest trade-off. A seller sending from a tablet between meetings
+          needs nearly everything a desktop sender needs — template selection, personalization,
+          recipient validation, compliance status, send confirmation — just not all of it at once.
+          The design direction I've been carrying forward is to keep every safeguard and remove
+          configuration, not the other way around: a simplified surface with the same guardrails,
+          not a lighter-weight product that happens to run on a phone.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Core Insight -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">The Core Insight</div>
+        <h2 class="case-section-title">The same question, asked at five different speeds</h2>
+        <p>
+          Every workflow in Bulk Email is answering one question: is this specific, personalized
+          message safe to send to this specific recipient, right now? What changes between
+          workflows is not the question but the clock. A seller wants that answer in seconds. A
+          recurring campaign has to answer it fresh every time its recipient list re-syncs. An
+          event-triggered email has to answer it without a human in the loop at the moment of
+          send. A bulk welcome email has to answer it for up to 150 recipients at once, with a
+          clear account of who succeeded and who didn't.
+        </p>
+        <p>
+          Once I treated speed as the variable and the underlying question as constant, the same
+          three-part shape held everywhere, just recomposed differently for each context.
+        </p>
+        <div class="process-steps stagger">
+          <div class="process-step">
+            <div class="process-step-num">01</div>
+            <div class="process-step-title">Personalize</div>
+            <div class="process-step-desc">Content and variables resolved within clearly defined permissions — locked sections shown as locked, not merely unavailable, so the user understands the boundary rather than guessing at it.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">02</div>
+            <div class="process-step-title">Validate</div>
+            <div class="process-step-desc">Recipients and content checked before send — invalid addresses, duplicates, and unresolved variables surfaced clearly, with an explicit distinction between validating a list now and validating it again at send time.</div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-num">03</div>
+            <div class="process-step-title">Govern</div>
+            <div class="process-step-desc">Messages routed through compliance review when personalization requires it, with status, ownership, and audit history preserved identically regardless of which of the five workflows produced the message.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Craft -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">Where the Craft Went</div>
+        <h2 class="case-section-title">The distinctions users never see, until they get them wrong</h2>
+        <p>
+          Most of the difficult decisions on Bulk Email don't render as a screen. Three examples
+          of the kind of thing that took the most time to get right.
+        </p>
+        <p>
+          <strong>Locked is not the same as unavailable.</strong> A field a seller can't edit
+          because an administrator locked it for compliance is a completely different situation
+          from a field that's simply missing data — but rendered identically, both just look
+          broken. Locked content has to look locked, with a reason attached, or users spend their
+          time reporting bugs that are actually policy.
+        </p>
+        <p>
+          <strong>Validating now is not the same as validating at send time.</strong> A recipient
+          list checked at 9am and sent at 2pm has had five hours to go stale — someone unsubscribed,
+          a record changed, a sync ran. Treating an earlier validation as still true at send time is
+          how firms end up explaining an email that shouldn't have gone out. The two checks have to
+          be visibly separate events, not one status the user assumes still holds.
+        </p>
+        <p>
+          <strong>A change to one send is not the same as a change to all future sends.</strong>
+          On a recurring campaign, editing today's message, editing the standard template, and
+          editing the campaign's cadence are three different blast radii. Collapsing them into a
+          single "save" is the fastest way to have a seller accidentally change a message a
+          hundred other people are relying on for next month.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Building the pattern once -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">Building the Pattern Once</div>
+        <h2 class="case-section-title">Five workflows, one set of parts</h2>
+        <p>
+          Rather than design each workflow as its own product, I've been building a shared set of
+          patterns that each one composes differently — the same way the governance service itself
+          separates a common workflow engine from what's genuinely local to each surface.
+        </p>
+        <div class="result-list stagger">
+          <div class="result-item">
+            <div class="result-item-text">One status model — Draft through Delivered — reused across one-time blasts, recurring campaigns, and event-triggered sends, instead of a bespoke status set per workflow</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-text">A single pre-send validation experience for recipients and content, carried through to a reduced but equally safeguarded mobile version</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-text">A reviewer experience that renders the email exactly as the recipient will see it, with variables resolved rather than shown as raw tokens</div>
+          </div>
+          <div class="result-item">
+            <div class="result-item-text">Bulk Welcome Email built on the same recipient-validation and audit patterns as customer-facing sends, rather than shipped as a one-off admin utility</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Compliance -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">Compliance, Inherited and Extended</div>
+        <h2 class="case-section-title">What the reviewer needs that a generic queue doesn't have</h2>
+        <p>
+          Because Bulk Email sits on the governance platform, the reviewer gets the same queue,
+          the same claim-and-decide actions, and the same audit trail as every other compliance
+          surface at Seismic. What it needed on top of that was specific to email: the fully
+          rendered message as the recipient will actually see it, HTML and formatting included,
+          rather than a source view; recipient-specific values resolved in context rather than
+          displayed as tokens; and enough framing around sender, campaign, and requested send time
+          that a reviewer isn't reconstructing context the system already has.
+        </p>
+        <p>
+          Supervisors needed a different view of the same data — pending approvals across the firm
+          regardless of who they're assigned to, filterable by sender, campaign, and age, so a
+          bottleneck shows up as a queue getting old rather than as a complaint. Governance without
+          visibility just relocates the honor system one level up.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Where it stands -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">Where It Stands</div>
+        <h2 class="case-section-title">Sequenced, not simultaneous</h2>
+        <p>
+          The roadmap spreads this out deliberately rather than trying to ship five workflows at
+          once. Near-term work is establishing the foundations — global variables, DSR sharing, IP
+          pooling, and explicit state transitions for Bulk Email itself. Recurring delivery,
+          dynamic list refresh, and a redesigned template selection experience follow. Mobile Bulk
+          Email and Bulk Welcome Email land later, once the desktop patterns they extend are
+          settled. I'm treating that sequencing as roadmap themes to design toward, not commitments
+          to hold fixed — the order is likely to shift as dependencies on the governance platform
+          and the email service become clearer.
+        </p>
+        <p>
+          The open question I haven't settled is what happens when a recipient list is only
+          partially valid. Blocking the entire send over a handful of bad addresses punishes the
+          sender for data they don't control. Silently dropping invalid recipients and sending
+          anyway removes a decision the sender should probably get to make. My current direction is
+          to make the valid and invalid counts explicit and require an active choice — send to the
+          valid subset, fix the list, or cancel — rather than picking a default on the user's
+          behalf. Whether that's the right amount of friction for a seller trying to send before a
+          meeting is something I want usability testing to answer, not something to assume from a
+          desk.
+        </p>
+      </div>
+
+      <!-- Reflection -->
+      <div class="case-section fade-up">
+        <div class="case-section-label">What I'm Taking From It</div>
+        <h2 class="case-section-title">Designing one product that doesn't feel like five</h2>
+        <p>
+          The temptation on a project like this is to let each workflow become its own small
+          design effort — a one-time-send screen, a campaign builder, a mobile app, each solved on
+          its own terms. What's held the work together instead is designing the shared question
+          first — is this message safe to send to this recipient right now — and only then asking
+          what each context needs to answer it at its own speed.
+        </p>
+        <p>
+          That's the same discipline the governance platform itself is built on, applied one level
+          down. It's also the reason I think Bulk Email will hold up as the roadmap adds workflows
+          I haven't designed yet: the parts are shared, so the fifth workflow costs less than the
+          first one did.
+        </p>
+      </div>
+
+    </div>
+  </article>
+
+  <!-- ===================== NEXT CASE ===================== -->
+  <section class="next-case">
+    <div class="container">
+      <span class="section-label">Next Case Study</span>
+      <div class="next-case-title">Governance Orchestration Service</div>
+      <p class="next-case-sub">Replacing per-application approval workflows with a single compliance model</p>
+      <a href="governance-orchestration-service.html" class="btn btn-primary">View Case Study</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">Rodrigo Müller</div>
+        <nav class="footer-nav">
+          <a href="index.html" class="footer-nav-link">Home</a>
+          <a href="case-studies.html" class="footer-nav-link">Work</a>
+          <a href="about.html" class="footer-nav-link">About</a>
+          <a href="resume.html" class="footer-nav-link">Resume</a>
+        </nav>
+        <div class="footer-social">
+          <a href="https://www.linkedin.com/in/rodmuller/" class="social-btn" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/rocomu8/" class="social-btn" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© <span id="year"></span> Rodrigo Müller. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
