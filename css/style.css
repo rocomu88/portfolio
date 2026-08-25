@@ -1041,6 +1041,24 @@ ul { list-style: none; }
   .case-image-grid { grid-template-columns: 1fr; }
 }
 
+/* Full-bleed-ish image that breaks out wider than the 880px text column */
+.case-image-wide {
+  width: min(1240px, 100vw - 56px);
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 44px;
+  margin-bottom: 44px;
+}
+.case-image-wide .case-image-block { margin: 0; }
+.case-image-wide-caption {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--text-muted);
+  max-width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Next case study */
 .next-case {
   background: var(--bg-alt);
