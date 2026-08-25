@@ -8,7 +8,24 @@
   <meta name="robots" content="noindex, nofollow" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="locked">
+  <script>if (localStorage.getItem('case-study-access') === '1') { document.body.classList.remove('locked'); }</script>
+
+  <!-- ===================== PASSWORD GATE ===================== -->
+  <div class="pass-gate">
+    <div class="pass-gate-box">
+      <div class="pass-gate-logo">Rodrigo Müller</div>
+      <div class="pass-gate-label">Protected</div>
+      <h1 class="pass-gate-title">This case study is password protected</h1>
+      <p class="pass-gate-sub">Enter the password to view. Don't have it? Get in touch and I'll share it.</p>
+      <form class="pass-gate-form" id="passGateForm" autocomplete="off">
+        <input type="password" class="pass-gate-input" id="passGateInput" placeholder="Enter password" autocomplete="off" />
+        <div class="pass-gate-error" id="passGateError"></div>
+        <button type="submit" class="pass-gate-btn">View Case Study</button>
+      </form>
+      <a href="case-studies.html" class="pass-gate-back">← Back to all work</a>
+    </div>
+  </div>
 
   <!-- ===================== NAVIGATION ===================== -->
   <nav class="nav" id="nav">
@@ -285,5 +302,6 @@
   </footer>
 
   <script src="js/main.js?v=4"></script>
+  <script src="js/passgate.js?v=1"></script>
 </body>
 </html>

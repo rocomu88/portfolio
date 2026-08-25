@@ -1355,3 +1355,101 @@ button.case-image-zoom:focus-visible .case-image-zoom-hint {
   .case-meta-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.08); }
   .case-meta-item:last-child { border-bottom: none; }
 }
+
+/* ============================================================
+   Password Gate (case studies)
+   ============================================================ */
+body.locked > *:not(.pass-gate) { display: none !important; }
+body:not(.locked) .pass-gate { display: none !important; }
+
+.pass-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--navy);
+  padding: 24px;
+}
+.pass-gate-box {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 40px 32px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+.pass-gate-logo {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+.pass-gate-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue);
+  margin-bottom: 8px;
+}
+.pass-gate-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0 0 8px;
+  line-height: 1.3;
+}
+.pass-gate-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+.pass-gate-form { display: flex; flex-direction: column; gap: 12px; }
+.pass-gate-input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: var(--font);
+  color: var(--text);
+  box-sizing: border-box;
+  transition: var(--ease);
+}
+.pass-gate-input:focus { outline: none; border-color: var(--blue); box-shadow: 0 0 0 3px var(--blue-light); }
+.pass-gate-input.error { border-color: #DC2626; animation: gate-shake 0.3s; }
+@keyframes gate-shake {
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+.pass-gate-btn {
+  width: 100%;
+  padding: 12px;
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: var(--ease);
+}
+.pass-gate-btn:hover { background: var(--blue-hover); }
+.pass-gate-error {
+  font-size: 13px;
+  color: #DC2626;
+  min-height: 16px;
+}
+.pass-gate-back {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 13px;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.pass-gate-back:hover { color: var(--text); }
