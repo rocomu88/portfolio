@@ -121,10 +121,6 @@
           a satisfaction issue; they were blocking deals outright and capping what existing
           customers were willing to switch on.
         </p>
-
-        <div class="case-image-block">
-          <img src="assets/img/gos-dsr-flow.png" alt="Engagements list showing digital sales rooms with live, in-review, and rejected compliance states" />
-        </div>
       </div>
 
       <!-- Leadership Role -->
@@ -230,8 +226,36 @@
           </div>
         </div>
 
-        <div class="case-image-block">
-          <img src="assets/img/gos-reviewer-queue.png" alt="Unified reviewer queue showing submissions across content types with claim actions and workflow steps" />
+        <button type="button" class="case-image-block case-image-zoom" data-caption="The state reference. Nine canonical states, with the persona label each role sees — the Canonical State column is what the system stores and integrates against; the persona labels are presentation only." aria-label="Enlarge image: the canonical state reference table">
+          <img src="assets/img/State-Model.png" alt="State reference table listing nine canonical states with the label each persona sees — row three shows SUBMITTED rendered as Submitted to the submitter, Unclaimed to the reviewer, and Unassigned to the admin" />
+          <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+        </button>
+        <p style="margin-top: 20px; font-size: 14px; color: var(--text-muted);">
+          The state reference we worked from. One canonical state, three persona labels — and a
+          standing rule that the table is the source of truth, reconciled to the screens rather
+          than the other way around.
+        </p>
+
+        <div class="case-image-wide">
+          <div class="case-image-grid case-image-grid--three">
+            <button type="button" class="case-image-block case-image-zoom" data-caption="Admin view — every submission across the firm, with Assign actions and the Unassigned label." aria-label="Enlarge image: the admin view of the submissions hub">
+              <img src="assets/img/GOS-Admin.png" alt="Admin view of the submissions hub showing all 31 submissions across the firm, with Unassigned status chips and Assign actions" />
+              <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+            </button>
+            <button type="button" class="case-image-block case-image-zoom" data-caption="Reviewer view — only the queue they can act on, with Claim actions, the Unclaimed label, and a stale-submissions count." aria-label="Enlarge image: the reviewer view of the submissions hub">
+              <img src="assets/img/GOS-Reviewer.png" alt="Reviewer view of the submissions hub showing eight submissions in their queue with Unclaimed status chips, Claim actions, and a stale submissions card" />
+              <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+            </button>
+            <button type="button" class="case-image-block case-image-zoom" data-caption="Submitter view — only their own work, the Submitted label, and no decision actions at all." aria-label="Enlarge image: the submitter view of the submissions hub">
+              <img src="assets/img/GOS-Submitter.png" alt="Submitter view of the submissions hub showing only their own six submissions with Submitted status chips and no claim or assign actions" />
+              <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+            </button>
+          </div>
+          <p class="case-image-wide-caption">
+            The same submissions model rendered for three roles. The underlying state never
+            changes — only the label, the scope of what you can see, and the actions you are
+            allowed to take.
+          </p>
         </div>
       </div>
 
@@ -338,6 +362,15 @@
         <div class="case-image-block">
           <img src="assets/img/gos-reviewer-detail.png" alt="Submission review screen with an AI-generated summary of changes and version comparison controls" />
         </div>
+
+        <button type="button" class="case-image-block case-image-zoom" style="margin-top: 36px;" data-caption="The full review screen — submitted-versus-previous comparison alongside the review steps, submission details, and activity log that let a reviewer decide without reconstructing context." aria-label="Enlarge image: the full submission review screen">
+          <img src="assets/img/GOS-Single-Review.png" alt="Full submission review screen showing the submitted content, a version comparison toggle, multi-step review progress with each step's reviewer and decision, submission details, and an activity log" />
+          <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+        </button>
+        <p style="margin-top: 20px; font-size: 14px; color: var(--text-muted);">
+          Everything a reviewer needs to decide, on one screen — what changed, which step they
+          are on, who has already signed off, and the record of how it got here.
+        </p>
       </div>
 
       <div class="divider"></div>
@@ -442,6 +475,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=3"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

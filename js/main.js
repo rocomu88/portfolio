@@ -149,9 +149,13 @@ document.querySelectorAll('.nav-link[data-page]').forEach(link => {
     lastFocused = trigger;
     img.src = src.currentSrc || src.src;
     img.alt = src.alt || '';
-    const cap = trigger.closest('.case-image-wide, .case-section');
-    const capEl = cap && cap.querySelector('.case-image-wide-caption');
-    caption.textContent = capEl ? capEl.textContent.trim() : (src.alt || '');
+    if (trigger.dataset.caption) {
+      caption.textContent = trigger.dataset.caption;
+    } else {
+      const cap = trigger.closest('.case-image-wide, .case-section');
+      const capEl = cap && cap.querySelector('.case-image-wide-caption');
+      caption.textContent = capEl ? capEl.textContent.trim() : (src.alt || '');
+    }
     box.classList.remove('zoomed');
 
     document.body.style.overflow = 'hidden';

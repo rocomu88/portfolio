@@ -1037,6 +1037,10 @@ ul { list-style: none; }
 .case-image-grid .case-image-block {
   margin: 0;
 }
+.case-image-grid--three { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 900px) {
+  .case-image-grid--three { grid-template-columns: 1fr; }
+}
 @media (max-width: 640px) {
   .case-image-grid { grid-template-columns: 1fr; }
 }
@@ -1120,9 +1124,17 @@ button.case-image-zoom:focus-visible .case-image-zoom-hint {
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   opacity: 0;
-  transition: opacity 0.22s ease;
+  /* Must not intercept clicks while closed — it stays in the DOM between opens */
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.22s ease, visibility 0s linear 0.22s;
 }
-.lightbox.open { opacity: 1; }
+.lightbox.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.22s ease, visibility 0s linear 0s;
+}
 .lightbox-stage {
   flex: 1;
   min-height: 0;
