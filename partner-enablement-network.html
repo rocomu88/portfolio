@@ -118,13 +118,14 @@
           network valuable.
         </p>
 
-        <div class="case-image-block">
-          <img src="assets/img/pen-submission-form.png" alt="Content upload form capturing title, classification, and compliance metadata including registered reviewer, previous approval code, content expiration, accessibility level, FINRA filing status, and the partner firms to distribute to" />
-        </div>
+        <button type="button" class="case-image-block case-image-zoom" data-caption="The network as a source firm sees it — inbound partnership requests to accept, the firms already connected for sending and receiving content, and a directory to discover new ones." aria-label="Enlarge image: the Partner Enablement Network home page">
+          <img src="assets/img/PEN-Home.png" alt="Partner Enablement Network home page showing inbound partnership requests from wealth management firms, active connections for sending and receiving content, and an Explore Partners directory to discover and request new connections" />
+          <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+        </button>
         <p style="margin-top: 20px; font-size: 14px; color: var(--text-muted);">
-          Compliance metadata is captured at the moment of contribution — registered reviewer,
-          prior approval code, expiration, accessibility level, regulatory filing evidence — so
-          it travels with the content instead of being reconstructed at every firm it reaches.
+          Network density was the entire value proposition, so this view — who you are already
+          connected to, who wants to connect, and who else is out there — had to be the front
+          door, not a settings page.
         </p>
       </div>
 
@@ -151,6 +152,16 @@
           firms participate in the network without buying the platform did not come out of a
           feature backlog. It came from recognizing that network density was the entire value
           proposition, and that our onboarding experience was the thing standing in its way.
+        </p>
+
+        <button type="button" class="case-image-block case-image-zoom" data-caption="The submission portal itself — the thing that let non-customer firms participate without buying the platform, built from a requirement design surfaced rather than received." aria-label="Enlarge image: the content upload form">
+          <img src="assets/img/PEN-upload-form.png" alt="Content upload form capturing title, classification, and compliance metadata including submitter name, registered reviewer, previous approval code, content expiration, accessibility level, FINRA filing status, and the partner firms to distribute to" />
+          <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+        </button>
+        <p style="margin-top: 20px; font-size: 14px; color: var(--text-muted);">
+          Compliance metadata is captured at the moment of contribution — registered reviewer,
+          prior approval code, expiration, accessibility level, regulatory filing evidence — so it
+          travels with the content instead of being reconstructed at every firm it reaches.
         </p>
       </div>
 
@@ -206,9 +217,10 @@
           filter.
         </p>
 
-        <div class="case-image-block">
+        <button type="button" class="case-image-block case-image-zoom" data-caption="One content item does not have one status. It has a status per partner firm — version 1.0 in review at one, version 3.0 published at another, each carrying its own approval code." aria-label="Enlarge image: content status across partner firms">
           <img src="assets/img/pen-content-status.png" alt="Partner Enablement Network content status view showing each piece of content, the partner firm it synced to, its version, and its approval state at that firm" />
-        </div>
+          <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+        </button>
         <p style="margin-top: 20px; font-size: 14px; color: var(--text-muted);">
           One content item does not have one status. It has a status per partner firm — version
           1.0 in review at one, version 3.0 published at another, each carrying its own approval
@@ -242,9 +254,10 @@
           compliance model to maintain, and a reviewer would have had to learn two systems to do
           one job.
         </p>
-        <div class="case-image-block">
+        <button type="button" class="case-image-block case-image-zoom" data-caption="The submission detail inside PEN — same submission object, same reviewer model, same activity trail as every other approval on the platform." aria-label="Enlarge image: the partner content detail panel">
           <img src="assets/img/pen-detail-rail.png" alt="Partner content detail panel showing the submission ID, assigned compliance reviewer, requested turnaround date, and submitter comment with attached regulatory letter" />
-        </div>
+          <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+        </button>
         <p style="margin-top: 20px; font-size: 14px; color: var(--text-muted);">
           The submission detail inside PEN — same submission object, same reviewer model, same
           activity trail as every other approval on the platform.
@@ -281,57 +294,6 @@
       </div>
 
       <div class="divider"></div>
-
-      <!-- Results -->
-      <div class="case-section fade-up">
-        <div class="case-section-label">Where It Stands</div>
-        <h2 class="case-section-title">From early access toward general availability</h2>
-        <p>
-          Content approvals are in early access and working toward general availability, with the
-          requirements set by the anchor wirehouse deployment. The end-to-end experience is
-          designed across both sides of the network, and the approval surfaces that were built on
-          the older workflow are being rebuilt on the shared governance service rather than
-          patched.
-        </p>
-        <p>
-          The architecture was deliberately scoped to extend past documents. Lessons, social
-          posts, and program tasks are all content types a partner firm will eventually want to
-          distribute under the same governance, and the model was designed so adding them is a
-          new content type rather than a new approval system.
-        </p>
-        <div class="result-list stagger">
-          <div class="result-item">
-            <div class="result-item-text">Ten end-to-end flows designed and prototyped, covering source firms, target firms and advisors</div>
-          </div>
-          <div class="result-item">
-            <div class="result-item-text">Submission portal in verification, letting non-customer firms participate without buying the platform — the single largest barrier to network density</div>
-          </div>
-          <div class="result-item">
-            <div class="result-item-text">Retained evidence chain: approval codes, regulatory filing attachments, reviewer markups, and cross-tenant conversation history</div>
-          </div>
-          <div class="result-item">
-            <div class="result-item-text">Cross-tenant approval model built on the platform's shared governance service rather than a PEN-only workflow</div>
-          </div>
-          <div class="result-item">
-            <div class="result-item-text">Per-partner compliance status, so one content item can be live at one firm and in review at another without ambiguity</div>
-          </div>
-          <div class="result-item">
-            <div class="result-item-text">AI-assisted content relevance designed inside compliance constraints rather than bolted on top of them</div>
-          </div>
-          <div class="result-item">
-            <div class="result-item-text">Design partnered directly on the GTM strategy that secured investment for the initiative</div>
-          </div>
-        </div>
-
-        <div class="case-image-grid" style="margin-top: 40px;">
-          <div class="case-image-block">
-            <img src="assets/img/pen-content-status.png" alt="Content status across partner firms" />
-          </div>
-          <div class="case-image-block">
-            <img src="assets/img/pen-submission-form.png" alt="Content upload and compliance metadata form" />
-          </div>
-        </div>
-      </div>
 
       <!-- Reflection -->
       <div class="case-section fade-up">
