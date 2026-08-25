@@ -293,6 +293,49 @@
           audiences, retention rules, and levels of detail — and only one of them is a user
           interface.
         </p>
+        <p>
+          The clearest evidence of that thinking is the compliance card itself — one component,
+          reskinned per state, that is the submitter's entire mental model of where their work
+          stands. Below is the full set as the submitter sees it, in order.
+        </p>
+
+        <div class="case-image-wide">
+          <div class="case-image-grid case-image-grid--three">
+            <button type="button" class="case-image-block case-image-zoom" data-caption="Needs review — the state before a submission exists. No ticket, no reviewer, just a status note and the button that starts one." aria-label="Enlarge image: compliance card spec for the Needs Review state">
+              <img src="assets/img/Card-Needs-Review.png" alt="Compliance card spec for the Needs Review state — an orange-accented card with a status note and a Submit for review button; the spec notes no submission object exists yet, so there is no metadata, reviewer, or comments" />
+              <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+            </button>
+            <button type="button" class="case-image-block case-image-zoom" data-caption="Submitted — the ticket exists and is unclaimed. The reviewer slot reads Unassigned until someone claims it." aria-label="Enlarge image: compliance card spec for the Submitted state">
+              <img src="assets/img/Card-Submitted.png" alt="Compliance card spec for the Submitted state — a blue-accented card showing submission metadata, a Cancel submission action, an unassigned reviewer card, and the submitter's comment" />
+              <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+            </button>
+            <button type="button" class="case-image-block case-image-zoom" data-caption="In review — claimed by a reviewer. Same card as Submitted, with the reviewer slot now filled in." aria-label="Enlarge image: compliance card spec for the In Review state">
+              <img src="assets/img/Card-In-Review.png" alt="Compliance card spec for the In Review state — the same layout as Submitted but with the reviewer card now assigned to a named reviewer and role" />
+              <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+            </button>
+            <button type="button" class="case-image-block case-image-zoom" data-caption="Action needed — changes requested. Resubmitting reopens a pre-populated submission modal rather than starting over." aria-label="Enlarge image: compliance card spec for the Action Needed state">
+              <img src="assets/img/Card-Action-Needed.png" alt="Compliance card spec for the Action Needed state — an orange-accented card with the reviewer's comment requesting changes, a Resubmit for review button, and a Cancel submission action" />
+              <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+            </button>
+            <button type="button" class="case-image-block case-image-zoom" data-caption="Approved — terminal for this version unless a reviewer or admin revokes it, which returns the submission to In review without erasing the original approval." aria-label="Enlarge image: compliance card spec for the Approved state">
+              <img src="assets/img/Card-Approved.png" alt="Compliance card spec for the Approved state — a green-accented card showing the approval date and the reviewer's approval comment" />
+              <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+            </button>
+            <button type="button" class="case-image-block case-image-zoom" data-caption="Rejected — terminal and, unlike approval, cannot be revoked. Trying again means starting a new submission from an approved template." aria-label="Enlarge image: compliance card spec for the Rejected state">
+              <img src="assets/img/Card-Rejected.png" alt="Compliance card spec for the Rejected state — a red-accented card showing the rejection date and the reviewer's required rejection comment" />
+              <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+            </button>
+            <button type="button" class="case-image-block case-image-zoom" data-caption="Closed — the one terminal state that isn't a verdict. Reserved for submissions the system or an admin closes outright, like an expired template." aria-label="Enlarge image: compliance card spec for the Closed state">
+              <img src="assets/img/Card-Closed.png" alt="Compliance card spec for the Closed state — a gray-accented card explaining the submission was closed by the system or an admin, neither approved nor rejected" />
+              <span class="case-image-zoom-hint" aria-hidden="true">Click to enlarge</span>
+            </button>
+          </div>
+          <p class="case-image-wide-caption">
+            Seven states, one card. Each spec pairs the rendered example with the contract behind
+            it — what it contains, what it can do, and where it exits to — so the same component
+            never drifts out of sync with the state model it represents.
+          </p>
+        </div>
       </div>
 
       <div class="divider"></div>

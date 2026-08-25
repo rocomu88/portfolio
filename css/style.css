@@ -1033,6 +1033,7 @@ ul { list-style: none; }
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   margin: 36px 0;
+  align-items: start;
 }
 .case-image-grid .case-image-block {
   margin: 0;
