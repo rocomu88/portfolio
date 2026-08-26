@@ -1042,6 +1042,19 @@ ul { list-style: none; }
 @media (max-width: 900px) {
   .case-image-grid--three { grid-template-columns: 1fr; }
 }
+/* Force equal-height thumbnails when the source screenshots have slightly
+   different aspect ratios (crops from the bottom, keeps headers aligned).
+   The lightbox still opens the full, uncropped image. */
+.case-image-grid--match-height img {
+  aspect-ratio: 4078 / 2698;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: top;
+}
+@media (max-width: 900px) {
+  .case-image-grid--match-height img { aspect-ratio: auto; object-fit: initial; }
+}
 @media (max-width: 640px) {
   .case-image-grid { grid-template-columns: 1fr; }
 }
