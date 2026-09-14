@@ -196,3 +196,90 @@ document.querySelectorAll('.nav-link[data-page]').forEach(link => {
 
   triggers.forEach(t => t.addEventListener('click', () => open(t)));
 })();
+
+/* Count-up on stat numbers as they scroll into view */
+(function () {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const targets = document.querySelectorAll('.stat-number, .impact-number');
+  if (!targets.length || reduceMotion) return;
+
+  function animate(el) {
+    const node = el.firstChild;
+    if (!node || node.nodeType !== Node.TEXT_NODE) return;
+    const match = node.nodeValue.match(/^([^\d]*)(\d+(?:\.\d+)?)(.*)$/s);
+    if (!match) return;
+    const [, prefix, numStr, suffix] = match;
+    const target = parseFloat(numStr);
+    if (!isFinite(target)) return;
+
+    const decimals = (numStr.split('.')[1] || '').length;
+    const duration = 1100;
+    let start = null;
+
+    function tick(now) {
+      if (start === null) start = now;
+      const p = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      node.nodeValue = prefix + (target * eased).toFixed(decimals) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+      else node.nodeValue = prefix + numStr + suffix;
+    }
+    requestAnimationFrame(tick);
+  }
+
+  const countObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setTimeout(() => animate(entry.target), 150);
+        countObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.4 });
+
+  targets.forEach(el => countObserver.observe(el));
+})();
+
+/* Subtle parallax on hero art */
+(function () {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduceMotion) return;
+
+  const layers = [];
+  const caseHero = document.querySelector('[class*="case-hero--"]');
+  if (caseHero) layers.push({ setVar: v => caseHero.style.setProperty('--hero-parallax', v + 'px'), factor: 0.15, max: 60 });
+  const heroImg = document.querySelector('.hero-image-wrap img');
+  if (heroImg) layers.push({ setVar: v => { heroImg.style.transform = `translateY(${v}px)`; }, factor: 0.12, max: 40 });
+  if (!layers.length) return;
+
+  let ticking = false;
+  function update() {
+    const y = window.scrollY;
+    layers.forEach(l => l.setVar(Math.max(-l.max, Math.min(l.max, y * l.factor))));
+    ticking = false;
+  }
+  window.addEventListener('scroll', () => {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
+  update();
+})();
+
+/* Scroll progress bar (case study pages) */
+(function () {
+  const bar = document.getElementById('scrollProgress');
+  if (!bar) return;
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  let ticking = false;
+  function update() {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollable > 0 ? Math.min(window.scrollY / scrollable, 1) : 0;
+    bar.style.transform = `scaleX(${progress})`;
+    ticking = false;
+  }
+  window.addEventListener('scroll', () => {
+    if (!ticking) { requestAnimationFrame(update); ticking = true; }
+  }, { passive: true });
+  window.addEventListener('resize', update, { passive: true });
+  if (!reduceMotion) bar.style.transition = 'transform 0.1s linear';
+  update();
+})();

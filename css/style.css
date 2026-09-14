@@ -272,6 +272,7 @@ ul { list-style: none; }
   object-fit: cover;
   object-position: top center;
   aspect-ratio: 3/4;
+  will-change: transform;
   border: 1px solid rgba(255,255,255,0.08);
 }
 .hero-img-placeholder {
@@ -834,6 +835,8 @@ ul { list-style: none; }
   background-position: center, right center;
   background-size: cover, cover;
   z-index: 0;
+  transform: translateY(var(--hero-parallax, 0px));
+  will-change: transform;
 }
 .case-hero--gos .case-hero-inner { position: relative; z-index: 1; }
 .case-hero--pen { position: relative; overflow: hidden; }
@@ -848,6 +851,8 @@ ul { list-style: none; }
   background-position: center, right center;
   background-size: cover, cover;
   z-index: 0;
+  transform: translateY(var(--hero-parallax, 0px));
+  will-change: transform;
 }
 .case-hero--pen .case-hero-inner { position: relative; z-index: 1; }
 .case-hero--bulk-email { position: relative; overflow: hidden; }
@@ -862,6 +867,8 @@ ul { list-style: none; }
   background-position: center, right center;
   background-size: cover, cover;
   z-index: 0;
+  transform: translateY(var(--hero-parallax, 0px));
+  will-change: transform;
 }
 .case-hero--bulk-email .case-hero-inner { position: relative; z-index: 1; }
 .case-hero--social { position: relative; overflow: hidden; }
@@ -876,6 +883,8 @@ ul { list-style: none; }
   background-position: center, right center;
   background-size: cover, cover;
   z-index: 0;
+  transform: translateY(var(--hero-parallax, 0px));
+  will-change: transform;
 }
 .case-hero--social .case-hero-inner { position: relative; z-index: 1; }
 .case-breadcrumb {
@@ -1372,8 +1381,8 @@ button.case-image-zoom:focus-visible .case-image-zoom-hint {
 /* ============================================================
    Password Gate (case studies)
    ============================================================ */
-body.locked > *:not(.pass-gate) { display: none !important; }
-body:not(.locked) .pass-gate { display: none !important; }
+html.locked body > *:not(.pass-gate) { display: none !important; }
+html:not(.locked) .pass-gate { display: none !important; }
 
 .pass-gate {
   position: fixed;
@@ -1466,3 +1475,19 @@ body:not(.locked) .pass-gate { display: none !important; }
   text-decoration: none;
 }
 .pass-gate-back:hover { color: var(--text); }
+
+/* ============================================================
+   Scroll progress (case studies)
+   ============================================================ */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: var(--blue);
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: 300;
+  will-change: transform;
+}

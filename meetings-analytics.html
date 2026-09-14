@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="locked">
 <head>
   <meta charset="UTF-8" />
+  <script>if (localStorage.getItem('case-study-access') === '1') { document.documentElement.classList.remove('locked'); }</script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Seismic Meetings Analytics — Rodrigo Müller</title>
   <meta name="description" content="How I led the design of Seismic Meetings Analytics — turning raw meeting data into coaching insights for enterprise sales leaders." />
   <meta name="robots" content="noindex, nofollow" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body class="locked">
-  <script>if (localStorage.getItem('case-study-access') === '1') { document.body.classList.remove('locked'); }</script>
+<body>
 
   <!-- ===================== PASSWORD GATE ===================== -->
   <div class="pass-gate">
@@ -26,6 +26,8 @@
       <a href="case-studies.html" class="pass-gate-back">← Back to all work</a>
     </div>
   </div>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
 
   <!-- ===================== NAVIGATION ===================== -->
   <nav class="nav" id="nav">
@@ -263,7 +265,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=4"></script>
+  <script src="js/main.js?v=5"></script>
   <script src="js/passgate.js?v=1"></script>
 </body>
 </html>

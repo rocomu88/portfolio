@@ -24,7 +24,7 @@
     sha256Hex(val).then(function (hex) {
       if (hex === HASH) {
         localStorage.setItem(KEY, '1');
-        document.body.classList.remove('locked');
+        document.documentElement.classList.remove('locked');
       } else {
         errorEl.textContent = 'Incorrect password. Try again.';
         input.classList.remove('error');
